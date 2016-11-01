@@ -7,6 +7,8 @@ You need to install ADS1X15 Arduino library written by Adafruit Industries
 https://github.com/adafruit/Adafruit_ADS1X15
 Significant portion of this code was taken from the example included in the library.
 
+This example also utilizes timer library by Simon Monk and et al.
+https://github.com/JChristensen/Timer
 
 Author: Shunya Sato
 
@@ -36,7 +38,6 @@ THE SOFTWARE.
 #include <Adafruit_ADS1015.h>
 #include "Timer.h"
 
-const int analogPin = 0;     // analog pin 0
 Timer t;
 //Adafruit_ADS1115 ads;
 Adafruit_ADS1015 ads;
@@ -91,8 +92,8 @@ void readADC(){
 //  Serial.print(", ");
 //  Serial.print(adc0);
 //  Serial.print(", ");
-  Serial.print(adc0 * multiplier);
-  Serial.print(", ");
+//  Serial.print(adc0 * multiplier);
+//  Serial.print(", ");
 //  Serial.print(adc1);
 //  Serial.print(", ");
   Serial.println(adc1 * multiplier);
